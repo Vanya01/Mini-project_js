@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User_details</title>
+</head>
+<body>
+
+
+
+<script>
+    console.log(location.href)
+     const url = new URL(location)
+     const join = url.searchParams.get('user')
+
+    console.log(join)
+
+    const user = JSON.parse(join)
+    console.log(user)
+
+
+    document.body.innerText = JSON.stringify(user,null,2)
+</script>
+</body>
+</html>
