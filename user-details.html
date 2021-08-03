@@ -6,20 +6,14 @@
 </head>
 <body>
 
-
+<div id="second_page"></div>
 
 <script>
-    console.log(location.href)
      const url = new URL(location)
      const join = url.searchParams.get('user')
-
-    console.log(join)
-
     const user = JSON.parse(join)
-    console.log(user)
 
-
-    document.body.innerText = JSON.stringify(user,null,2)
+    document.body.innerText = JSON.stringify(user)
 </script>
 </body>
 </html>

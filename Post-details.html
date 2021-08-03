@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post details</title>
+</head>
+<body>
+<script>
+    const url = new URL(location)
+    const join = url.searchParams.get('post')
+    const post = JSON.parse(join)
+
+    document.body.innerText = JSON.stringify(post,null,4)
+</script>
+</body>
+</html>
