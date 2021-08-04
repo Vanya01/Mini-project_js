@@ -4,14 +4,13 @@
 // 3 Добавить каждому блоку кнопку/ссылку , при клике на которую происходит переход на страницу user-details.html, которая имеет детальную информацию про объект на который кликнули
 // 4 Вывести всю, без исключения, информацию про объект user на кнопку/ссылку которого был совершен клик ранее.
 
+
 // На странице user-details.html:
 // 5 Добавить кнопку "post of current user", при клике на которую, появляются title всех постов текущего юзера
 // (для получения постов используйте эндпоинт https://jsonplaceholder.typicode.com/users/USER_ID/posts)
 // 6 Каждому посту добавить кнопку/ссылку, при клике на которую происходит переход на страницу post-details.html, которая имеет детальную информацию про текущий пост.
 
-
 const  mainDiv = document.getElementById('about')
-
     fetch(` https://jsonplaceholder.typicode.com/users`)
         .then(value => value.json())
         .then(value => {
@@ -22,27 +21,14 @@ const  mainDiv = document.getElementById('about')
                 an.innerText = ' Get info '
 
                 an.href = `user-details.html?user=${JSON.stringify(user)}`
+
                 inDiv.appendChild(an)
                 mainDiv.appendChild(inDiv)
+
+
             }
         })
 
-const secondDiv = document.getElementById('second_page')
-
- fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)
-     .then(value => value.json())
-     .then(value => {
-         for (const post of value){
-             let next = document.createElement('div')
-             let anchor = document.createElement('button')
-             next.innerText = user.name
-             anchor.innerText = ' Get info '
-             anchor.href = `Post-details.html?user=${JSON.stringify(user)}`
-             next.appendChild(an)
-             secondDiv.appendChild(next)
-
-         }
-     })
 
 
 

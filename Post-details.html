@@ -5,12 +5,18 @@
     <title>Post details</title>
 </head>
 <body>
+
+<div id="block_three"></div>
 <script>
+    const mainBlock = document.getElementById('block_three')
     const url = new URL(location)
     const join = url.searchParams.get('post')
     const post = JSON.parse(join)
 
-    document.body.innerText = JSON.stringify(post,null,4)
+    let Div = document.createElement('div')
+    Div.innerText = ` Id - ${post.title}`
+    mainBlock.append(Div)
+
 </script>
 </body>
 </html>
