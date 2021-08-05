@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Post details</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+<div id="last_btn"></div>
 <div id="block_three"></div>
-<script>
-    const mainBlock = document.getElementById('block_three')
-    const url = new URL(location)
-    const join = url.searchParams.get('post')
-    const post = JSON.parse(join)
 
-    let Div = document.createElement('div')
-    Div.innerText = ` Id - ${post.title}`
-    mainBlock.append(Div)
+<div id="last_wrap">
+    <div class="com_wrap"><h2>ID:</h2><p class="pg"></p></div>
+    <div class="com_wrap more"><h2>Post:</h2><p class="pg-two"></p></div>
+</div>
 
-</script>
+<script src="third.js"></script>
 </body>
 </html>
