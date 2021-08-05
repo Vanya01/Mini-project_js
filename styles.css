@@ -156,7 +156,17 @@ body{
     border: 1px solid lightcyan;
     justify-content: center;
     align-items: center;
-  padding: 2% 2% 2% 7%;
+  padding: 2%;
+    box-sizing: border-box;
     font-weight: bold;
     color:darkred ;
+}
+
+.newBlock{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.com_div{
+    width: 25%;
 }
