@@ -144,12 +144,6 @@ body{
     margin:10px 5px 5px 5px;
 }
 
-#block_three{
-    display: grid;
-    grid-template-columns: 33fr 33fr 33fr;
-    justify-items:stretch;
-    place-items: stretch;
-}
 
 .com_div{
     font-size: 120%;
@@ -169,4 +163,41 @@ body{
 }
 .com_div{
     width: 25%;
+}
+
+#last_wrap{
+    text-align:center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.last_span{
+    font-weight: bold;
+    color: darkred;
+    font-size: 130%;
+    max-width: 200px;
+    box-sizing: border-box;
+
+
+}
+#span_one{
+    margin-top: 3%;
+    color: black;
+    max-width: 50px;
+    border: 2px solid navajowhite;
+    border-radius: 10px;
+    background: lightgoldenrodyellow;
+    padding: 8px;
+}
+
+
+#span_two{
+    margin-top: 10px;
+    max-width: 200px;
+    max-height: 200px;
+    margin-bottom: 5%;
+    padding: 10px;
+    border: 2px solid lightgoldenrodyellow;
+    border-radius: 5px;
+    background: navajowhite;
 }

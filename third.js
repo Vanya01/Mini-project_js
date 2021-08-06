@@ -9,14 +9,16 @@ const join = url.searchParams.get('post')
 const post = JSON.parse(join)
 
 
-let postId =  document.getElementsByClassName('com_wrap').innerText = `ID - ${post.id}`
-let postBody =  document.getElementsByClassName('com_wrap').innerText = ` Post - ${post.body}`
+// let postId =  document.getElementsByClassName('com_wrap').innerText = `ID - ${post.id} Post - ${post.body}`
+// let postBody =  document.getElementsByClassName('com_wrap').innerText = ``
 
 
 fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
     .then(value => value.json())
     .then(comments => {
         const newBlock = document.createElement('div')
+         document.getElementById('span_one').innerHTML = `<span class="last_span">ID</span> - ${post.id}`
+         document.getElementById('span_two').innerHTML = ` <span class="last_span">Post</span> - ${post.body}`
         newBlock.classList.add('newBlock')
         for (const comment of comments) {
             let threeDiv = document.createElement('div')
@@ -25,6 +27,5 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
             newBlock.appendChild(threeDiv)
         }
 
-        get.append(postId,postBody)
-        document.body.appendChild(newBlock)
+        document.body.append(newBlock)
     })
