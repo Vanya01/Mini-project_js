@@ -80,7 +80,7 @@ body{
 
 #two{
     display: grid;
-    grid-template-columns: 33fr 33fr 33fr;
+    grid-template-columns: 20fr 20fr 20fr 20fr 20fr;
   justify-items:stretch;
     place-items: stretch;
 }

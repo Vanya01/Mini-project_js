@@ -13,6 +13,7 @@ Div.classList.add('secondDiv')
 Div.innerHTML = `<div id="wrap_info">
 
 <div class="wrapper">
+
 <div class="wrapper_in"><h3>ID:</h3><p>${user.id}</p></div>
 <div class="wrapper_in"><h3> Name:</h3><p>${user.name}</p></div>
 <div class="wrapper_in"><h3>Username:</h3><p>${user.username}</p></div>
@@ -26,7 +27,6 @@ Div.innerHTML = `<div id="wrap_info">
 <div class="wrapper_in"><h3>Company name:</h3><p>${user.company.name}</p></div>
 <div class="wrapper_in"><h3>Company cash:</h3><p>${user.company.catchPhrase}</p></div>
 <div class="wrapper_in"><h3>Company BS:</h3><p>${user.company.bs}</p></div>
-
 
 </div>
 </div>
