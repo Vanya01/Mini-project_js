@@ -1,17 +1,18 @@
 
-body{
+body {
     background: lightgray;
 }
 
 
-#about{
+#about {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     width: 100%;
 }
-.wrap_first{
+
+.wrap_first {
     width: 45%;
-    margin:2%;
+    margin: 2%;
     border: 2px solid lightgoldenrodyellow;
     background: moccasin;
     border-radius: 10px;
@@ -21,33 +22,38 @@ body{
     align-items: center;
 }
 
-.wrap_first>a{
+.wrap_first > a {
     display: block;
     text-decoration: none;
     color: lightcoral;
     font-size: 150%;
 
 }
-.wrap_first>a:hover{
-   color: lime;
+
+.wrap_first > a:hover {
+    color: lime;
     transition: 320ms;
 }
-.span{
+
+.span {
     margin-right: 30px;
 }
-#second_page{
+
+#second_page {
     justify-content: center;
 }
-.secondDiv{
+
+.secondDiv {
     justify-content: center;
 }
-.second_button{
+
+.second_button {
     background: moccasin;
     margin: 3% 0 5% 5%;
     width: 90%;
     padding: 10px 10px 10px 0;
     border-radius: 10px;
-    border: 2px solid lightgoldenrodyellow ;
+    border: 2px solid lightgoldenrodyellow;
     color: darkred;
     font-weight: bold;
     font-size: 120%;
@@ -55,123 +61,140 @@ body{
     cursor: pointer;
 
 }
-.second_button:hover{
+
+.second_button:hover {
     color: moccasin;
     background: darkred;
     transition: 500ms;
 }
 
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.wrapper_in{
-    display: flex;
-}
-.wrapper_in>p{
-    font-size: 120%;
-    font-weight: initial;
-    margin:10px 0 10px 0;
-}
-.wrapper_in>h3{
-    margin:10px 10px 10px 0;
+.wrapper {
+    width: 500px;
+    margin: 10rem 0 0 35rem;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 20px;
 }
 
-#two{
+.wrapper_in {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper_in > p {
+    font-size: 120%;
+    font-weight: initial;
+    margin: 10px 0 10px 0;
+}
+
+.wrapper_in > h3 {
+    margin: 10px 10px 10px 0;
+}
+
+#two {
     display: grid;
     grid-template-columns: 20fr 20fr 20fr 20fr 20fr;
-  justify-items:stretch;
+    justify-items: stretch;
     place-items: stretch;
 }
-.post_wrap{
+
+.post_wrap {
     align-items: center;
     border: 1px solid black;
     justify-content: center;
     background: rgba(188, 201, 60, 0.1);
 }
-.post_wrap>p{
-    font-weight:bold;
+
+.post_wrap > p {
+    font-weight: bold;
     color: crimson;
     margin-top: 5px;
-   padding-left: 10%;
+    padding-left: 10%;
 }
-.post_wrap>h4{
+
+.post_wrap > h4 {
     padding-left: 10%;
     color: darkred;
     font-weight: bold;
     font-size: 120%;
     margin-bottom: 5px;
 }
-.posts_btn{
 
-    border-radius:10px;
+.posts_btn {
+
+    border-radius: 10px;
     padding: 5px;
     border: 1px solid lightgoldenrodyellow;
     color: darkred;
     background: moccasin;
     font-weight: bold;
-    margin:0 0 5% 35%;
+    margin: 0 0 5% 35%;
 }
-.posts_btn:hover{
+
+.posts_btn:hover {
     color: moccasin;
     background: darkred;
     transition: 500ms;
     cursor: pointer;
 }
-#last_wrap{
+
+#last_wrap {
     display: flex;
     flex-direction: column;
 }
 
-.com_wrap{
+.com_wrap {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
 }
-.more{
+
+.more {
     display: flex;
     flex-direction: column;
 }
-.com_wrap>h2 {
-    margin: 5px 10px 0 0 ;
+
+.com_wrap > h2 {
+    margin: 5px 10px 0 0;
 }
-.com_wrap>p {
+
+.com_wrap > p {
     font-weight: lighter;
     font-size: 120%;
-    margin:10px 5px 5px 5px;
+    margin: 10px 5px 5px 5px;
 }
 
 
-.com_div{
+.com_div {
     font-size: 120%;
     border: 1px solid lightcyan;
     justify-content: center;
     align-items: center;
-  padding: 2%;
+    padding: 2%;
     box-sizing: border-box;
     font-weight: bold;
-    color:darkred ;
+    color: darkred;
 }
 
-.newBlock{
+.newBlock {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
-.com_div{
+
+.com_div {
     width: 25%;
 }
 
-#last_wrap{
-    text-align:center;
+#last_wrap {
+    text-align: center;
     align-items: center;
     font-weight: bold;
 }
 
-.last_span{
+.last_span {
     font-weight: bold;
     color: darkred;
     font-size: 130%;
@@ -180,7 +203,8 @@ body{
 
 
 }
-#span_one{
+
+#span_one {
     margin-top: 3%;
     color: black;
     max-width: 50px;
@@ -191,7 +215,7 @@ body{
 }
 
 
-#span_two{
+#span_two {
     margin-top: 10px;
     max-width: 200px;
     max-height: 200px;

@@ -1,4 +1,3 @@
-
 const mainBlock = document.getElementById('second_page')
 const url = new URL(location)
 const join = url.searchParams.get('user')
@@ -9,22 +8,19 @@ Div.classList.add('secondDiv')
 Div.innerHTML = `<div id="wrap_info">
 
 <div class="wrapper">
-
-<div class="wrapper_in"><h3>ID:</h3><p>${user.id}</p></div>
-<div class="wrapper_in"><h3> Name:</h3><p>${user.name}</p></div>
-<div class="wrapper_in"><h3>Username:</h3><p>${user.username}</p></div>
-<div class="wrapper_in"><h3>Email:</h3><p>${user.email}</p></div>
-<div class="wrapper_in"><h3>Street:</h3><p>${user.address.street}</p></div>
-<div class="wrapper_in"><h3>Zipcode:</h3><p>${user.address.zipcode}</p></div>
-<div class="wrapper_in"><h3>Lat:</h3><p>${user.address.geo.lat}</p></div>
-<div class="wrapper_in"><h3>Lng:</h3><p>${user.address.geo.lng}</p></div>
-<div class="wrapper_in"><h3>Phone:</h3><p>${user.phone}</p></div>
-<div class="wrapper_in"><h3>Website:</h3><p>${user.website}</p></div>
-<div class="wrapper_in"><h3>Company name:</h3><p>${user.company.name}</p></div>
-<div class="wrapper_in"><h3>Company cash:</h3><p>${user.company.catchPhrase}</p></div>
-<div class="wrapper_in"><h3>Company BS:</h3><p>${user.company.bs}</p></div>
-
-</div>
+<h3 style="margin: 0">ID:${user.id}</h3></br>
+Name: ${user.name} </br>
+Username: ${user.username}</br>
+Email: ${user.email}</br>
+Street: ${user.address.street}</br>
+Zipcode: ${user.address.zipcode} </br>
+Lat: ${user.address.geo.lat} </br>
+Lng: ${user.address.geo.lng} </br>
+Phone: ${user.phone} </br>
+Website: ${user.website} </br>
+Company name: ${user.company.name}</br>
+Company cash: ${user.company.catchPhrase}</br>
+Company BS: ${user.company.bs}</p></br>
 </div>
 `
 
